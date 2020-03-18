@@ -41,14 +41,12 @@ with open('sample_input.csv', newline='') as csvFile:
                     max[3] = float(row['WDSD'])
                 if float(row['WDSD']) < min[3] and float(row['WDSD'])>=0:
                     min[3] = float(row['WDSD'])
-if row['station_id'] == 'C0X260':
-    #print(row['station_id'],row['WDSD'])
-    if float(row['WDSD']) > max[4]:
-        max[4] = float(row['WDSD'])
-            if float(row['WDSD']) < min[4] and float(row['WDSD'])>=0:
-                min[4] = float(row['WDSD'])
-
-
+            if row['station_id'] == 'C0X260':
+                #print(row['station_id'],row['WDSD'])
+                if float(row['WDSD']) > max[4]:
+                    max[4] = float(row['WDSD'])
+                if float(row['WDSD']) < min[4] and float(row['WDSD'])>=0:
+                    min[4] = float(row['WDSD'])
 
 rng=[]
 i=0
